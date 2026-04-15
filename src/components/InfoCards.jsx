@@ -54,7 +54,32 @@ export default function InfoCards() {
       title: "About Me",
       description:
         "I'm a fullstack developer with experience in both front-end and back-end development.",
-      content: <p>Full About Me content goes here...</p>,
+      content: (
+        <>
+          <p>
+            Hello, my name is David, im 27 years old and im a Fullstack software
+            developer, I am a person very interested in technology, networks and
+            telecommunications, with a focus on software development.<br></br> I
+            graduated from SENA in 2025 with a degree in Software Development,
+            where I built strong foundations in programming, problem solving,
+            and system design. Since then, I’ve continued learning
+            independently, focusing on real-world development and continuously
+            improving my technical skills. I consider myself a flexible
+            developer and fast learner, capable of adapting quickly to new
+            technologies, tools, and project requirements.<br></br>I enjoy
+            understanding problems deeply and transforming ideas into
+            functional, scalable applications. My main stack currently includes
+            JavaScript, React, Node.js, Python, and Linux, and I strongly
+            believe in learning by building. Instead of limiting myself to
+            tutorials, I focus on creating complete products from scratch —
+            designing architecture, implementing features, and thinking about
+            long-term scalability.
+          </p>
+          <a href="/david-alvarez-cv.pdf" download className="cv-button">
+            Download CV
+          </a>
+        </>
+      ),
     },
     {
       id: "projects",

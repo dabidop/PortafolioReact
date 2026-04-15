@@ -351,3 +351,20 @@ body {
     display: none;
   }
 }
+
+.cv-button {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(135deg, #2e8bff, #6aa9ff);
+  transition: 0.3s;
+}
+
+.cv-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px rgba(46, 139, 255, 0.6);
+}
