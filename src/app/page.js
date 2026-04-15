@@ -4,6 +4,7 @@ import SpaceBackground from "@/components/SpaceBackground";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Content";
 import Footer from "@/components/footer";
+import InfoCards from "@/components/InfoCards";
 
 export default function Home() {
   return (
@@ -11,11 +12,11 @@ export default function Home() {
       <Navbar />
       <SpaceBackground />
       <Hero />
-      <Footer />
 
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center py-32 px-16 bg-white dark:bg-black sm:items-start">
-        
+      <main >
+        <InfoCards />
       </main>
+      <Footer />
     </div>
   );
 }
