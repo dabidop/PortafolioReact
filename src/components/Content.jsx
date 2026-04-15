@@ -1,25 +1,28 @@
 "use client";
 
+import { useLanguage } from "@/context/LanguageContext";
+import { translations } from "@/i18n/translations";
+
 export default function Hero() {
+  const { language } = useLanguage();
+  const t = translations[language];
+
   return (
     <section className="hero">
       <div className="hero-content">
         <h1>
-          Welcome to <span>my portfolio</span>
+          {t.heroWelcome} <span>{t.heroHighlight}</span>
         </h1>
 
-        <p>
-          I am a Software Developer passionate about building modern web
-          applications, interactive experiences and scalable systems.
-        </p>
+        <p>{t.heroDescription}</p>
 
         <div className="hero-buttons">
           <a href="#projects" className="btn primary">
-            View Projects
+            {t.viewProjects}
           </a>
 
           <a href="#contact" className="btn secondary">
-            Contact Me
+            {t.contactMe}
           </a>
         </div>
       </div>

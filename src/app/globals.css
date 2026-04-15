@@ -125,6 +125,25 @@ body {
   }
 }
 
+/*-------------------------------------traducción-------------------------------------*/
+
+.lang-switch {
+  display: flex;
+  gap: 10px;
+}
+
+.lang-switch button {
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.lang-switch button:hover {
+  transform: scale(1.2);
+}
+
 /* --------------------------------------WELCOME SECTION------------------------------------------ */
 
 .hero {
