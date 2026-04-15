@@ -76,7 +76,7 @@ export default function InfoCards() {
             long-term scalability.
           </p>
           <a href="/david-alvarez-cv.pdf" download className="cv-button">
-            Download CV
+            View CV
           </a>
         </>
       ),
@@ -95,18 +95,30 @@ export default function InfoCards() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              App con Vue.Js que consume api de Star Wars
+              App with Vue.js that consumes Star Wars API
             </a>
           </li>
+
+          <li>
+            <a
+              href="https://snakegame-3hll.onrender.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Snake Game made with basic JavaScript
+            </a>
+          </li>
+
           <li>
             <a
               href="https://star-wars-7hvc.onrender.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Otra cosa jaja
+              Another app that will be announced soon
             </a>
           </li>
+
         </ul>
       ),
     },

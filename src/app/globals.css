@@ -35,15 +35,19 @@ body {
   pointer-events: none;
 }
 
+/*----------------------------------------NAVBAR------------------------------------------------------*/
+
 .navbar {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 2;
-  backdrop-filter: blur(10px);
-  background: rgba(0, 0, 20, 0.4);
+  z-index: 10;
+  backdrop-filter: blur(14px);
+  background: rgba(10, 10, 30, 0.65);
+  -webkit-backdrop-filter: blur(14px); /* iPhone fix */
   border-bottom: 1px solid rgba(255,255,255,0.1);
   border: none;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
 }
 
 .navbar-container {
@@ -82,7 +86,7 @@ body {
   color: #2e8bff;
 }
 
-/* Mobile */
+/*--------- Mobile ------*/
 
 .mobile-btn {
   display: none;
@@ -96,7 +100,7 @@ body {
   display: none;
 }
 
-/* Responsive */
+/* ----------------------------------------Responsive --------------------------------------*/
 
 @media (max-width: 768px) {
   .menu {
@@ -121,7 +125,7 @@ body {
   }
 }
 
-/* HERO SECTION */
+/* --------------------------------------WELCOME SECTION------------------------------------------ */
 
 .hero {
   position: relative;
@@ -157,7 +161,7 @@ body {
   line-height: 1.6;
 }
 
-/* BOTONES */
+/*----------------------------------------- BOTONES ----------------------------------*/
 
 .hero-buttons {
   margin-top: 40px;
