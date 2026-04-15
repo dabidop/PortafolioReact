@@ -18,7 +18,7 @@ export default function Navbar() {
 
         {/* Logo */}
         <div className="logo">
-          Dav<span>Portfolio</span>
+          DevID<span>Portfolio</span>
         </div>
 
         {/* Desktop Menu */}

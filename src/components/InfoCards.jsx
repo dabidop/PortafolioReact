@@ -87,7 +87,28 @@ export default function InfoCards() {
       title: "My Projects",
       description:
         "Here are some of the amazing projects I've worked on recently.",
-      content: <p>Projects list will go here...</p>,
+      content: (
+        <ul className="projects-list">
+          <li>
+            <a
+              href="https://star-wars-7hvc.onrender.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              App con Vue.Js que consume api de Star Wars
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://star-wars-7hvc.onrender.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Otra cosa jaja
+            </a>
+          </li>
+        </ul>
+      ),
     },
     {
       id: "skills",

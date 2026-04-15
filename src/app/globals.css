@@ -237,7 +237,7 @@ body {
   color: #2e8bff;
 }
 
-/*INFO CARDS*/
+/*----------------------------------------INFO CARDS----------------------------------------*/
 
 .info-section {
   width: 100%;
@@ -245,7 +245,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5%;
   flex-direction: column;
 }
 
@@ -263,7 +262,7 @@ body {
   
 }
 
-/* CARD */
+/* ----------------------------------------CARD ---------------------------------*/
 .info-card {
   backdrop-filter: blur(12px);
   background: rgba(20, 20, 30, 0.55);
@@ -298,7 +297,7 @@ body {
   line-height: 1.6;
 }
 
-/* CONTENIDO ABIERTO */
+/* -------------------------CONTENIDO ABIERTO CARDS------------------*/
 .info-content {
   margin-top: 15px;
   backdrop-filter: blur(12px);
@@ -352,6 +351,8 @@ body {
   }
 }
 
+/*--------------------------------------------BOTÓN DESCARGA CV CARDS-----------------------------------------*/
+
 .cv-button {
   display: inline-block;
   margin-top: 25px;
@@ -367,4 +368,43 @@ body {
 .cv-button:hover {
   transform: translateY(-2px);
   box-shadow: 0 0 15px rgba(46, 139, 255, 0.6);
+}
+
+/*----------------------------------------CSS lista proyectos cards---------------------------------------------------*/
+.projects-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 15px;
+}
+
+.projects-list li {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 12px;
+}
+
+/* punto custom */
+.projects-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: rgba(255,255,255,0.4);
+  transition: 0.25s;
+}
+
+/* links */
+.projects-list a {
+  color: white;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+/* hover elegante */
+.projects-list li:hover::before {
+  color: #2e8bff;
+  transform: translateX(3px);
+}
+
+.projects-list a:hover {
+  color: #2e8bff;
 }
