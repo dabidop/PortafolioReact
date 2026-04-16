@@ -5,6 +5,7 @@ export default function SpaceBackground() {
   const canvasRef = useRef(null);
 
   useEffect(() => {
+    const isMobile = window.innerWidth < 768;
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
     const earthImg = new Image();
@@ -15,7 +16,7 @@ export default function SpaceBackground() {
 
     const stars = [];
 
-    const STAR_COUNT = 1000;
+    const STAR_COUNT = isMobile ? 200 : 1000;
 
     for (let i = 0; i < STAR_COUNT; i++) {
       stars.push({
@@ -73,11 +74,27 @@ export default function SpaceBackground() {
 
     animate();
 
-    window.addEventListener("resize", () => {
-      width = canvas.width = window.innerWidth;
-      height = canvas.height = window.innerHeight;
-    });
+    const handleResize = () => {
+      width = window.innerWidth;
+      height = window.innerHeight;
+
+      canvas.width = width * dpr;
+      canvas.height = height * dpr;
+
+      canvas.style.width = width + "px";
+      canvas.style.height = height + "px";
+
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // ✅ CLEANUP CORRECTO
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
+  // ✅ EL COMPONENTE SIEMPRE DEVUELVE JSX
   return <canvas ref={canvasRef} className="space-canvas" />;
 }

@@ -52,8 +52,10 @@ export default function Navbar() {
                 <a href={link.href}>{link.name}</a>
               </li>
             ))}
+            <button onClick={() => setLanguage("en")}>🇺🇸</button>
+            <button onClick={() => setLanguage("es")}>🇪🇸</button>
           </ul>
-          <div id="google_translate_element"></div>
+          
         </>
       )}
     </nav>
