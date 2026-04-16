@@ -9,6 +9,11 @@ export default function SpaceBackground() {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
 
+    if (!ctx) {
+      console.log("Canvas no soportado");
+      return;
+    }
+
     const earthImg = new Image();
     earthImg.src = "/earth.png";
 
@@ -52,7 +57,7 @@ export default function SpaceBackground() {
           x - earthRadius,
           y - earthRadius,
           earthRadius * 2,
-          earthRadius * 2
+          earthRadius * 2,
         );
 
         ctx.restore();
