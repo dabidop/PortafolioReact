@@ -8,14 +8,23 @@ export default function SpaceBackground() {
     const isMobile = window.innerWidth < 768;
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
+
     const earthImg = new Image();
     earthImg.src = "/earth.png";
 
-    let width = (canvas.width = window.innerWidth);
-    let height = (canvas.height = window.innerHeight);
+    const dpr = window.devicePixelRatio || 1;
+
+    let width = window.innerWidth;
+    let height = window.innerHeight;
+
+    canvas.width = width * dpr;
+    canvas.height = height * dpr;
+    canvas.style.width = width + "px";
+    canvas.style.height = height + "px";
+
+    ctx.scale(dpr, dpr);
 
     const stars = [];
-
     const STAR_COUNT = isMobile ? 200 : 1000;
 
     for (let i = 0; i < STAR_COUNT; i++) {
@@ -35,7 +44,6 @@ export default function SpaceBackground() {
 
       if (earthImg.complete) {
         ctx.save();
-
         ctx.shadowColor = "#4da6ff";
         ctx.shadowBlur = 40;
 
@@ -44,7 +52,7 @@ export default function SpaceBackground() {
           x - earthRadius,
           y - earthRadius,
           earthRadius * 2,
-          earthRadius * 2,
+          earthRadius * 2
         );
 
         ctx.restore();
@@ -54,7 +62,6 @@ export default function SpaceBackground() {
     function animate() {
       ctx.clearRect(0, 0, width, height);
 
-      // Dibujar estrellas orbitando
       stars.forEach((star) => {
         star.angle += star.speed;
 
