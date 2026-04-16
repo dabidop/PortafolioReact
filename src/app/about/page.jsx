@@ -18,7 +18,7 @@ export default function AboutPage() {
       <main className="about-page flex-1">
         <div className="about-container">
           <h1>{t.title}</h1>
-          <p>{t.content}</p>
+          <p className="about-text">{t.content}</p>
           <a href="/david-alvarez-cv.pdf" download className="cv-button">
             {t.cv}
           </a>

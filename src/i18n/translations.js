@@ -17,23 +17,18 @@ export const translations = {
         description:
           "I'm a fullstack developer with experience in both front-end and back-end development.",
         content: `
-            Hello, my name is David, im 27 years old and im a Fullstack software
-            developer, I am a person very interested in technology, networks and
-            telecommunications, with a focus on software development. I
-            graduated from SENA in 2025 with a degree in Software Development,
-            where I built strong foundations in programming, problem solving,
-            and system design. Since then, I’ve continued learning
-            independently, focusing on real-world development and continuously
-            improving my technical skills. I consider myself a flexible
-            developer and fast learner, capable of adapting quickly to new
-            technologies, tools, and project requirements. I enjoy
-            understanding problems deeply and transforming ideas into
-            functional, scalable applications. My main stack currently includes
-            JavaScript, React, Node.js, Python, and Linux, and I strongly
-            believe in learning by building. Instead of limiting myself to
-            tutorials, I focus on creating complete products from scratch —
-            designing architecture, implementing features, and thinking about
-            long-term scalability.
+            Hello, my name is David, im 27 years old and im a Fullstack software developer, I am a person very 
+            interested in technology, networks and telecommunications, with a focus on software development.
+            Igraduated from SENA in 2025 with a degree in Software Development, where I built strong foundations in
+            programming, problem solving, and system design. Since then, I’ve continued learning independently,
+            focusing on real-world development and continuously improving my technical skills.
+
+            I consider myself a flexible developer and fast learner, capable of adapting quickly to new
+            technologies, tools, and project requirements. I enjoy understanding problems deeply and transforming
+            ideas into functional, scalable applications. My main stack currently includes JavaScript, React, Node.js,
+            Python, and Linux, and I strongly believe in learning by building. Instead of limiting myself to tutorials,
+            I focus on creating complete products from scratch — designing architecture, implementing features,
+            and thinking about long-term scalability.
         `,
         cv: "View CV",
       },
@@ -75,20 +70,17 @@ export const translations = {
           "Soy desarrollador fullstack con experiencia en frontend y backend.",
         content: `
           Hola, me llamo David, tengo 27 años y soy desarrollador de software Fullstack.
-          Me apasiona la tecnología, las redes y las telecomunicaciones, con especial interés en el desarrollo de software.
-          Me gradué en SENA en 2025 con una licenciatura en Desarrollo de Software,
-          donde adquirí una sólida base en programación, resolución de problemas y
-          diseño de sistemas. Desde entonces, he continuado aprendiendo
-          de forma independiente, centrándome en el desarrollo práctico y mejorando continuamente
-          mis habilidades técnicas.
+          Me apasiona la tecnología, las redes y las telecomunicaciones, con especial interés en el desarrollo de
+          software. Me gradué en SENA en 2025 con un diploma de Análisis y Desarrollo de Software, donde adquirí
+          una sólida base en programación, resolución de problemas y diseño de sistemas. Desde entonces, he
+          continuado aprendiendo de forma independiente, centrándome en el desarrollo práctico y mejorando
+          continuamente mis habilidades técnicas.
           Me considero un desarrollador flexible y con gran capacidad de aprendizaje, capaz de adaptarme rápidamente a nuevas tecnologías, herramientas y requisitos de proyectos.
           Disfruto comprendiendo los problemas en profundidad y transformando ideas en
           aplicaciones funcionales y escalables.
           Actualmente, mi stack principal incluye JavaScript, React, Node.js, Python y Linux, y creo firmemente en
-          aprender construyendo.
-          En lugar de limitarme a tutoriales, me centro en crear productos completos desde cero:
-          diseñando la arquitectura, implementando funcionalidades y pensando en la
-          escalabilidad a largo plazo.
+          aprender construyendo. En lugar de limitarme a tutoriales, me centro en crear productos completos desde
+          cero: diseñando la arquitectura, implementando funcionalidades y pensando en la escalabilidad a largo plazo.
         `,
         cv: "Ver CV",
       },
