@@ -8,11 +8,10 @@ import InfoCards from "@/components/InfoCards";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
+    <div className="flex flex-col flex-1 items-center justify-center font-sans ">
       <Navbar />
       <SpaceBackground />
       <Hero />
-
       <main >
         <InfoCards />
       </main>

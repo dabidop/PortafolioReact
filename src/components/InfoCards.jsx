@@ -43,40 +43,26 @@ export default function InfoCards() {
 
 import { useState } from "react";
 import { User, Briefcase, Settings } from "lucide-react";
+import { useLanguage } from "@/context/LanguageContext";
+import { translations } from "@/i18n/translations";
 
 export default function InfoCards() {
   const [active, setActive] = useState(null);
+  const { language } = useLanguage();
+  const t = translations[language].infoCards;
 
   const cards = [
     {
       id: "about",
       icon: <User size={28} />,
-      title: "About Me",
-      description:
-        "I'm a fullstack developer with experience in both front-end and back-end development.",
+      title: t.about.title,
+      description: t.about.description,
       content: (
         <>
-          <p>
-            Hello, my name is David, im 27 years old and im a Fullstack software
-            developer, I am a person very interested in technology, networks and
-            telecommunications, with a focus on software development.<br></br> I
-            graduated from SENA in 2025 with a degree in Software Development,
-            where I built strong foundations in programming, problem solving,
-            and system design. Since then, I’ve continued learning
-            independently, focusing on real-world development and continuously
-            improving my technical skills. I consider myself a flexible
-            developer and fast learner, capable of adapting quickly to new
-            technologies, tools, and project requirements.<br></br>I enjoy
-            understanding problems deeply and transforming ideas into
-            functional, scalable applications. My main stack currently includes
-            JavaScript, React, Node.js, Python, and Linux, and I strongly
-            believe in learning by building. Instead of limiting myself to
-            tutorials, I focus on creating complete products from scratch —
-            designing architecture, implementing features, and thinking about
-            long-term scalability.
-          </p>
+          <p>{t.about.content}</p>
+
           <a href="/david-alvarez-cv.pdf" download className="cv-button">
-            View CV
+            {t.about.cv}
           </a>
         </>
       ),
@@ -84,51 +70,36 @@ export default function InfoCards() {
     {
       id: "projects",
       icon: <Briefcase size={28} />,
-      title: "My Projects",
-      description:
-        "Here are some of the amazing projects I've worked on recently.",
+      title: t.projects.title,
+      description: t.projects.description,
       content: (
         <ul className="projects-list">
           <li>
-            <a
-              href="https://star-wars-7hvc.onrender.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              App with Vue.js that consumes Star Wars API
+            <a href="https://star-wars-7hvc.onrender.com/" target="_blank">
+              {t.projects.project1}
             </a>
           </li>
 
           <li>
-            <a
-              href="https://snakegame-3hll.onrender.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Snake Game made with basic JavaScript
+            <a href="https://snakegame-3hll.onrender.com" target="_blank">
+              {t.projects.project2}
             </a>
           </li>
 
           <li>
-            <a
-              href="https://star-wars-7hvc.onrender.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Another app that will be announced soon
+            <a href="https://star-wars-7hvc.onrender.com/" target="_blank">
+              {t.projects.project3}
             </a>
           </li>
-
         </ul>
       ),
     },
     {
       id: "skills",
       icon: <Settings size={28} />,
-      title: "Skills & Tools",
-      description:
-        "Proficient in JavaScript, React, Node.js, and modern development tools.",
-      content: <p>Skills content will go here...</p>,
+      title: t.skills.title,
+      description: t.skills.description,
+      content: <p>{t.skills.content}</p>,
     },
   ];
 
