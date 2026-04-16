@@ -25,7 +25,7 @@ export default function SpaceBackground() {
     ctx.scale(dpr, dpr);
 
     const stars = [];
-    const STAR_COUNT = isMobile ? 200 : 1000;
+    const STAR_COUNT = isMobile ? 60 : 1000;
 
     for (let i = 0; i < STAR_COUNT; i++) {
       stars.push({
@@ -38,7 +38,6 @@ export default function SpaceBackground() {
 
     function drawEarth() {
       const earthRadius = 450;
-
       const x = width / 2;
       const y = height + 100;
 
