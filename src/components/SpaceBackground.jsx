@@ -5,7 +5,7 @@ export default function SpaceBackground() {
   const canvasRef = useRef(null);
 
   useEffect(() => {
-    const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+    const isMobile = window.innerWidth < 768;
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
 
@@ -38,23 +38,21 @@ export default function SpaceBackground() {
 
     function drawEarth() {
       const earthRadius = 450;
+
       const x = width / 2;
       const y = height + 100;
 
       if (earthImg.complete) {
         ctx.save();
         ctx.shadowColor = "#4da6ff";
-        if (!isMobile) {
-          ctx.shadowColor = "#4da6ff";
-          ctx.shadowBlur = 40;
-        }
+        ctx.shadowBlur = 40;
 
         ctx.drawImage(
           earthImg,
           x - earthRadius,
           y - earthRadius,
           earthRadius * 2,
-          earthRadius * 2,
+          earthRadius * 2
         );
 
         ctx.restore();
