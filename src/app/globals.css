@@ -264,6 +264,19 @@ body {
   color: #2e8bff;
 }
 
+/* 📱 Mobile */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-left,
+  .footer-right {
+    width: 100%;
+  }
+}
+
 /*----------------------------------------INFO CARDS----------------------------------------*/
 
 .info-section {
