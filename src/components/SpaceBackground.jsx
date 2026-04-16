@@ -66,6 +66,9 @@ export default function SpaceBackground() {
 
     function animate() {
       ctx.clearRect(0, 0, width, height);
+      // ⭐ FONDO ESPACIO
+      ctx.fillStyle = "#000";
+      ctx.fillRect(0, 0, width, height);
 
       stars.forEach((star) => {
         star.angle += star.speed;
