@@ -37,8 +37,8 @@ export const translations = {
         title: "My Projects",
         description:
           "Here are some of the amazing projects I've worked on recently.",
-        project1: "App with Vue.js that consumes Star Wars API",
-        project2: "Snake Game made with basic JavaScript, html and css",
+        project1: "App with Vue.js that consumes Star Wars API - SWAPI",
+        project2: "Classic Snake Game made with basic JavaScript, html and css",
         project3: "Another app that will be announced soon",
       },
 
@@ -89,7 +89,7 @@ export const translations = {
         title: "Mis Proyectos",
         description:
           "Estos son algunos proyectos en los que he trabajado recientemente.",
-        project1: "App en Vue.js que consume la API de Star Wars",
+        project1: "App en Vue.js que consume la API de Star Wars - SWAPI",
         project2: "Snake Game hecho con JavaScript básico, html y css",
         project3: "Otra app que será anunciada pronto",
       },

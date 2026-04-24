@@ -45,7 +45,7 @@ export default function ProjectShowcase({ project }) {
       <div className="relative w-full aspect-video overflow-hidden rounded-xl">
         <button
           onClick={prevImage}
-          className="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-black/50 text-white px-3 py-1 rounded"
+          className="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-black/50 text-white px-3 py-1 rounded cursor-pointer"
         >
           ←
         </button>
@@ -54,12 +54,12 @@ export default function ProjectShowcase({ project }) {
           src={project.images[currentIndex]}
           alt={project.title}
           fill
-          className="object-cover rounded-xl z-0"
+          className=" rounded-xl z-0"
         />
 
         <button
           onClick={nextImage}
-          className="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-black/50 text-white px-3 py-1 rounded"
+          className="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-black/50 text-white px-3 py-1 rounded cursor-pointer"
         >
           →
         </button>

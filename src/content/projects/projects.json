@@ -2,7 +2,7 @@
   {
     "id": "starwars",
     "title": "StarWars",
-    "description": "App with Vue.js that consumes Star Wars API",
+    "description": "App with Vue.js that consumes Star Wars API - SWAPI",
     "coverImage": "/projects/starwars/cover.png",
     "images": [
       "/projects/starwars/screen1.png",
@@ -18,11 +18,11 @@
     "description": "Classic Snake Game made with basic JavaScript, html and css",
     "coverImage": "/projects/starwars/cover.png",
     "images": [
-      "/projects/starwars/screen1.png",
-      "/projects/starwars/screen2.png"
+      "/projects/snakegame/screen1.png",
+      "/projects/snakegame/screen2.png"
     ],
     "technologies": ["HTML", "CSS", "JavaScript"],
-    "github": "https://github.com/dabidop/star-Wars",
-    "demo": "https://star-wars-7hvc.onrender.com/"
+    "github": "https://github.com/dabidop/SnakeGame",
+    "demo": "https://snakegame-3hll.onrender.com/"
   }
 ]

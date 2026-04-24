@@ -2,13 +2,13 @@
 
 import { useState } from "react";
 import { useLanguage } from "@/context/LanguageContext";
-import { translations } from "@/i18n/translations";
 import Link from "next/link";
+import { useTranslation } from "@/i18n/useTranslation";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const { language, setLanguage } = useLanguage();
-  const t = translations[language];
+  const t = useTranslation();
 
   const links = [
     { name: t.about, href: "/about" },

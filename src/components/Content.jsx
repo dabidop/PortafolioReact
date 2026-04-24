@@ -1,11 +1,10 @@
 "use client";
 
-import { useLanguage } from "@/context/LanguageContext";
-import { translations } from "@/i18n/translations";
+import { useTranslation } from "@/i18n/useTranslation";
 
 export default function Hero() {
-  const { language } = useLanguage();
-  const t = translations[language];
+
+  const t = useTranslation();
 
   return (
     <section className="hero">
@@ -17,7 +16,7 @@ export default function Hero() {
         <p>{t.heroDescription}</p>
 
         <div className="hero-buttons">
-          <a href="#projects" className="btn primary">
+          <a href="/projects" className="btn primary">
             {t.viewProjects}
           </a>
 
