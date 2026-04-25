@@ -98,7 +98,13 @@ export const translations = {
         title: "Habilidades y Herramientas",
         description:
           "Experiencia con JavaScript, React, Node.js y herramientas modernas.",
-        content: "El contenido de habilidades irá aquí...",
+        content: `Desarrollador Full Stack con experiencia en el diseño y consumo de APIs REST. Trabajo con sistemas de
+        autenticación y autorización utilizando cookies, sesiones, JWT y distintas arquitecturas backend.
+        He desarrollado aplicaciones utilizando tecnologías como PHP, Node.js, .NET y Django (Python),
+        integrando soluciones escalables y seguras. Cuento además con conocimientos en administración de
+        servidores, uso de Amazon Web Services (AWS) y entornos Linux, incluyendo configuración, gestión de
+        permisos y manejo de línea de comandos.
+        `,
       },
     },
   },

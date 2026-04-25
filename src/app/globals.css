@@ -478,7 +478,7 @@ body {
   flex-direction: column;
 }
 
-/* CONTENEDOR PRINCIPAL */
+/*--------------------------- CONTENEDOR PRINCIPAL -------------------------------*/
 
 .about-container {
   max-width: 900px;
@@ -492,7 +492,7 @@ body {
     0 10px 40px rgba(0, 0, 0, 0.5),
     0 0 40px rgba(77, 166, 255, 0.08);
   color: white;
-  transition: 0.3s ease;align-items: center;
+  transition: 0.3s ease;
 }
 
 /* TITULO */
@@ -534,4 +534,43 @@ body {
   display: flex;
   flex-direction: column;
   gap: 80px;
+}
+
+/*-------------------------------------------------Skills Page-----------------------------------------------------*/
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.skill-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.skill-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filters button {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.filters .active {
+  background: #fff;
+  color: #000;
 }
