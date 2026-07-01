@@ -16,7 +16,6 @@ export default function Home() {
       <main >
         <InfoCards />
       </main>
-      
     </div>
     <Footer />
     </div>

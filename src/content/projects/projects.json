@@ -6,7 +6,9 @@
     "coverImage": "/projects/starwars/cover.png",
     "images": [
       "/projects/starwars/screen1.png",
-      "/projects/starwars/screen2.png"
+      "/projects/starwars/screen2.png",
+      "/projects/starwars/screen3.png",
+      "/projects/starwars/screen4.png"
     ],
     "technologies": ["Vue.js"],
     "github": "https://github.com/dabidop/star-Wars",
